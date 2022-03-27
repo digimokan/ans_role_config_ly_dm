@@ -13,6 +13,7 @@ Install and configure the Ly display manager.
 * [Quick Start](#quick-start)
     * [Use From Playbook](#use-from-playbook)
 * [Role Options](#role-options)
+* [Role Dependencies](#role-dependencies)
 * [Contributing](#contributing)
 
 ## Purpose
@@ -65,6 +66,10 @@ Install and configure the Ly display manager.
 See the role `defaults` files for main role vars listings:
 
   * [defaults](../defaults/main/)
+
+## Role Dependencies
+
+* [ans_role_config_unofficial_packages](https://github.com/digimokan/ans_role_config_unofficial_packages)
 
 ## Contributing
 
