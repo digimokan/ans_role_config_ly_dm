@@ -1,0 +1,7 @@
+- name: "Install 'ly' package"
+  ansible.builtin.package:
+    name: ly
+    state: present
+  become: true
+  become_user: root
+
