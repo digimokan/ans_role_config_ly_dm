@@ -1,0 +1,3 @@
+# Ly config file path
+linux_ly_config_path: '/etc/ly/config.ini'
+

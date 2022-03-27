@@ -1,0 +1,12 @@
+- name: "Configure Ly settings for Linux"
+  ansible.builtin.include_tasks: do_config.yml
+  vars:
+    ly_config_path: "{{ linux_ly_config_path }}"
+  when: ansible_system == "Linux"
+
+- name: "Configure Ly settings for FreeBSD"
+  ansible.builtin.include_tasks: do_config.yml
+  vars:
+    ly_config_path: "{{ freebsd_ly_config_path }}"
+  when: ansible_os_family == "FreeBSD"
+

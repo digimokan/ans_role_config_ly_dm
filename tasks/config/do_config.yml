@@ -1,0 +1,10 @@
+- name: "Configure all Ly settings in '{{ ly_config_path }}'"
+  ansible.builtin.template:
+    dest: "{{ ly_config_path }}"
+    src: "config_ini.j2"
+    owner: 'root'
+    mode: '755'
+    force: yes
+  become: true
+  become_user: root
+

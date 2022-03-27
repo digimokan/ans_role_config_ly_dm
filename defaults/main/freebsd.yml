@@ -1,3 +1,6 @@
+# Ly config file path
+freebsd_ly_config_path: '/usr/local/etc/ly/config.ini'
+
 # config file for system-wide terminal configuration
 freebsd_terminal_config_path: '/etc/gettytab'
 

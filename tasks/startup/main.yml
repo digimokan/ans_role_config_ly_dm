@@ -1,8 +1,8 @@
-- name: "Configure Ly startup for Arch Linux"
+- name: "Set Ly startup for Arch Linux"
   ansible.builtin.include_tasks: archlinux/main.yml
   when: ansible_os_family == "Archlinux"
 
-- name: "Configure Ly startup for FreeBSD"
+- name: "Set Ly startup for FreeBSD"
   ansible.builtin.include_tasks: freebsd/main.yml
   when: ansible_os_family == "FreeBSD"
 

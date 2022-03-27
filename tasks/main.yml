@@ -1,6 +1,9 @@
 - name: "Install Ly packages"
   ansible.builtin.include_tasks: install/main.yml
 
-- name: "Configure Ly startup at boot"
+- name: "Set Ly to startup at boot"
   ansible.builtin.include_tasks: startup/main.yml
+
+- name: "Configure Ly settings"
+  ansible.builtin.include_tasks: config/main.yml
 
