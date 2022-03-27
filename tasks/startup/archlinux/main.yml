@@ -1,0 +1,7 @@
+- name: "Ensure 'ly' service is enabled to start at boot"
+  ansible.builtin.service:
+    name: ly
+    enabled: yes
+  become: true
+  become_user: root
+

@@ -1,0 +1,26 @@
+- name: "Set terminal configuration for Ly in '{{ freebsd_terminal_config_path }}'"
+  ansible.builtin.blockinfile:
+    path: "{{ freebsd_terminal_config_path }}"
+    block: |
+      Ly:\
+          :lo=/usr/local/bin/ly:\
+          :al=root:
+    marker: "# {mark} ANSIBLE MANAGED BLOCK: Ly display manager terminal config"
+    state: present
+    create: no
+  become: true
+  become_user: root
+
+- name: "Set Ly to start on virtual console {{ virtual_console_num }} in '{{ freebsd_console_config_path }}'"
+  ansible.builtin.lineinfile:
+    path: "{{ freebsd_console_config_path }}"
+    regexp: >-
+      ^ttyv{{ virtual_console_num }}
+    line: >-
+      ttyv{{ virtual_console_num }} "/usr/libexec/getty Ly" xterm on secure
+    state: present
+    create: no
+    backup: yes
+  become: true
+  become_user: root
+

@@ -1,0 +1,3 @@
+# virtual console tty to run Ly on
+virtual_console_num: '1'
+
