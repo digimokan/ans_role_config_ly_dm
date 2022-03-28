@@ -1,11 +1,8 @@
 # Ly config file path
 freebsd_ly_config_path: '/usr/local/etc/ly/config.ini'
 
-# config file for system-wide terminal configuration
-freebsd_terminal_config_path: '/etc/gettytab'
-
-# config file for system-wide console configuration
-freebsd_console_config_path: '/etc/ttys'
+# login save file path (saves which user and session logged in)
+freebsd_login_save_path: '/usr/local/etc/ly/save'
 
 # Cookie generator command path
 freebsd_cookie_gen_cmd: '/usr/bin/openssl rand -hex 16'
@@ -27,4 +24,10 @@ freebsd_wayland_sessions_dir: '/usr/local/share/wayland-sessions'
 
 # Ly Wayland setup script path
 freebsd_ly_wayland_setup_script: '/usr/local/etc/ly/wsetup.sh'
+
+# config file for system-wide terminal configuration
+freebsd_terminal_config_path: '/etc/gettytab'
+
+# config file for system-wide console configuration
+freebsd_console_config_path: '/etc/ttys'
 

@@ -5,7 +5,10 @@
 # Upstream config source:
 #   https://github.com/fairyglade/ly/blob/master/res/config.ini
 
-# Cookie generator command path
+# login save file path (saves which user and session logged in)
+save_file = {{ login_save_path }}
+
+# cookie-generator command path
 mcookie_cmd = {{ cookie_gen_cmd }}
 
 # Xorg server command path

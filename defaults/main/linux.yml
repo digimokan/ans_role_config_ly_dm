@@ -1,6 +1,9 @@
 # Ly config file path
 linux_ly_config_path: '/etc/ly/config.ini'
 
+# login save file path (saves which user and session logged in)
+linux_login_save_path: '/etc/ly/save'
+
 # Cookie generator command path
 linux_cookie_gen_cmd: '/usr/bin/mcookie'
 
