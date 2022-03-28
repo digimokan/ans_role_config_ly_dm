@@ -10,3 +10,6 @@ linux_xorg_xauth_cmd: '/usr/bin/xauth'
 # directory where WM/DM-installed '.desktop' files are located
 linux_xsessions_dir: '/usr/share/xsessions'
 
+# Ly Xorg setup script path
+linux_ly_xsetup_script: '/etc/ly/xsetup.sh'
+

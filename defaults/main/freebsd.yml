@@ -16,3 +16,6 @@ freebsd_xorg_xauth_cmd: '/usr/local/bin/xauth'
 # directory where WM/DM-installed '.desktop' files are located
 freebsd_xsessions_dir: '/usr/local/share/xsessions'
 
+# Ly Xorg setup script path
+freebsd_ly_xsetup_script: '/usr/local/etc/ly/xsetup.sh'
+

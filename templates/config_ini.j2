@@ -6,11 +6,14 @@
 #   https://github.com/fairyglade/ly/blob/master/res/config.ini
 
 # Xorg server command path
-x_cmd: {{ xorg_server_cmd }}
+x_cmd = {{ xorg_server_cmd }}
 
 # Xorg Xauthority command path
-xauth_cmd: {{ xorg_xauth_cmd }}
+xauth_cmd = {{ xorg_xauth_cmd }}
 
 # dir path for externally-installed WM/DE '.desktop' files (used in Ly menu)
 xsessions = {{ xsessions_dir }}
+
+# Ly Xorg setup script path
+x_cmd_setup = {{ ly_xsetup_script }}
 
