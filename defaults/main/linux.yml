@@ -31,3 +31,6 @@ linux_ly_wayland_setup_script: '/etc/ly/wsetup.sh'
 # command to reset (i.e. clear) the terminal
 linux_terminal_reset_cmd: '/usr/bin/tput reset'
 
+# system-shutdown command (called from Ly menu)
+linux_system_shutdown_cmd: '/sbin/shutdown -a now'
+

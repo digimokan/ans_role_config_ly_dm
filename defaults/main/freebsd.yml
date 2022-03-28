@@ -37,3 +37,6 @@ freebsd_terminal_config_path: '/etc/gettytab'
 # config file for system-wide console configuration
 freebsd_console_config_path: '/etc/ttys'
 
+# system-shutdown command (called from Ly menu)
+freebsd_system_shutdown_cmd: '/sbin/shutdown -p now'
+
