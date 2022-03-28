@@ -5,6 +5,9 @@
 # Upstream config source:
 #   https://github.com/fairyglade/ly/blob/master/res/config.ini
 
+# system default PATH environment var
+path = {{ path_env_var }}
+
 # save login (user & session) used
 save = {{ 'true' if save_and_load_login else 'false' }}
 

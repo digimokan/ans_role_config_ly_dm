@@ -2,6 +2,7 @@
   ansible.builtin.include_tasks: common_config.yml
   vars:
     ly_config_path: "{{ linux_ly_config_path }}"
+    path_env_var: "{{ linux_path_env_var }}"
     login_save_path: "{{ linux_login_save_path }}"
     cookie_gen_cmd: "{{ linux_cookie_gen_cmd }}"
     xorg_server_cmd: "{{ linux_xorg_server_cmd }}"
@@ -16,6 +17,7 @@
   ansible.builtin.include_tasks: common_config.yml
   vars:
     ly_config_path: "{{ freebsd_ly_config_path }}"
+    path_env_var: "{{ freebsd_path_env_var }}"
     login_save_path: "{{ freebsd_login_save_path }}"
     cookie_gen_cmd: "{{ freebsd_cookie_gen_cmd }}"
     xorg_server_cmd: "{{ freebsd_xorg_server_cmd }}"

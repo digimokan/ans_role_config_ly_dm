@@ -1,6 +1,9 @@
 # Ly config file path
 linux_ly_config_path: '/etc/ly/config.ini'
 
+# system default PATH environment var
+linux_path_env_var: '/sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+
 # login save file path (saves which user and session logged in)
 linux_login_save_path: '/etc/ly/save'
 
