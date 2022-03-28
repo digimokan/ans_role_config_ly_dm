@@ -28,6 +28,9 @@ freebsd_wayland_sessions_dir: '/usr/local/share/wayland-sessions'
 # Ly Wayland setup script path
 freebsd_ly_wayland_setup_script: '/usr/local/etc/ly/wsetup.sh'
 
+# command to reset (i.e. clear) the terminal
+freebsd_terminal_reset_cmd: '/usr/bin/tput reset'
+
 # config file for system-wide terminal configuration
 freebsd_terminal_config_path: '/etc/gettytab'
 
