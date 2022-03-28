@@ -2,12 +2,14 @@
   ansible.builtin.include_tasks: common_config.yml
   vars:
     ly_config_path: "{{ linux_ly_config_path }}"
+    xsessions_dir: "{{ linux_xsessions_dir }}"
   when: ansible_system == "Linux"
 
 - name: "Configure common Ly settings for FreeBSD"
   ansible.builtin.include_tasks: common_config.yml
   vars:
     ly_config_path: "{{ freebsd_ly_config_path }}"
+    xsessions_dir: "{{ freebsd_xsessions_dir }}"
   when: ansible_os_family == "FreeBSD"
 
 - name: "Configure OS-specific settings for FreeBSD"
