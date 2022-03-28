@@ -6,6 +6,7 @@
     xorg_xauth_cmd: "{{ linux_xorg_xauth_cmd }}"
     xsessions_dir: "{{ linux_xsessions_dir }}"
     ly_xsetup_script: "{{ linux_ly_xsetup_script }}"
+    wayland_sessions_dir: "{{ linux_wayland_sessions_dir }}"
   when: ansible_system == "Linux"
 
 - name: "Configure common Ly settings for FreeBSD"
@@ -16,6 +17,7 @@
     xorg_xauth_cmd: "{{ freebsd_xorg_xauth_cmd }}"
     xsessions_dir: "{{ freebsd_xsessions_dir }}"
     ly_xsetup_script: "{{ freebsd_ly_xsetup_script }}"
+    wayland_sessions_dir: "{{ freebsd_wayland_sessions_dir }}"
   when: ansible_os_family == "FreeBSD"
 
 - name: "Configure OS-specific settings for FreeBSD"
