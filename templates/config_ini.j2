@@ -20,3 +20,6 @@ x_cmd_setup = {{ ly_xsetup_script }}
 # dir path for externally-installed WM/DE Wayland session files (used in Ly menu)
 waylandsessions = {{ wayland_sessions_dir }}
 
+# add Wayland specifier to session names
+wayland_specifier = {{ 'true' if add_wayland_session_specifier else 'false' }}
+
