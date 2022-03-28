@@ -1,11 +1,11 @@
-# - name: "Copy xsessions to Linux '{{ linux_xsessions_dir }}', due to bug in Ly"
-#   ansible.builtin.copy:
-#     src: "{{ freebsd_xsessions_dir }}"
-#     dest: "{{ linux_xsessions_dir }}"
-#     force: yes
-#     owner: root
-#     directory_mode: preserve
-#     mode: preserve
-#   become: true
-#   become_user: root
+- name: "Copy xsessions to Linux '{{ linux_xsessions_dir }}', due to bug in Ly"
+  ansible.builtin.copy:
+    src: "{{ freebsd_xsessions_dir }}"
+    dest: "{{ linux_xsessions_dir }}"
+    force: yes
+    owner: root
+    directory_mode: preserve
+    mode: preserve
+  become: true
+  become_user: root
 
