@@ -7,6 +7,9 @@ freebsd_terminal_config_path: '/etc/gettytab'
 # config file for system-wide console configuration
 freebsd_console_config_path: '/etc/ttys'
 
+# Cookie generator command path
+freebsd_cookie_gen_cmd: '/usr/bin/openssl rand -hex 16'
+
 # Xorg server command path
 freebsd_xorg_server_cmd: '/usr/local/bin/X'
 

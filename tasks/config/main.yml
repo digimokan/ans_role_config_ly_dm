@@ -2,6 +2,7 @@
   ansible.builtin.include_tasks: common_config.yml
   vars:
     ly_config_path: "{{ linux_ly_config_path }}"
+    cookie_gen_cmd: "{{ linux_cookie_gen_cmd }}"
     xorg_server_cmd: "{{ linux_xorg_server_cmd }}"
     xorg_xauth_cmd: "{{ linux_xorg_xauth_cmd }}"
     xsessions_dir: "{{ linux_xsessions_dir }}"
@@ -14,6 +15,7 @@
   ansible.builtin.include_tasks: common_config.yml
   vars:
     ly_config_path: "{{ freebsd_ly_config_path }}"
+    cookie_gen_cmd: "{{ freebsd_cookie_gen_cmd }}"
     xorg_server_cmd: "{{ freebsd_xorg_server_cmd }}"
     xorg_xauth_cmd: "{{ freebsd_xorg_xauth_cmd }}"
     xsessions_dir: "{{ freebsd_xsessions_dir }}"

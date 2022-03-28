@@ -1,6 +1,9 @@
 # Ly config file path
 linux_ly_config_path: '/etc/ly/config.ini'
 
+# Cookie generator command path
+linux_cookie_gen_cmd: '/usr/bin/mcookie'
+
 # Xorg server command path
 linux_xorg_server_cmd: '/usr/bin/X'
 
