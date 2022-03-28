@@ -7,3 +7,6 @@ freebsd_terminal_config_path: '/etc/gettytab'
 # config file for system-wide console configuration
 freebsd_console_config_path: '/etc/ttys'
 
+# directory where WM/DM-installed '.desktop' files are located
+freebsd_xsessions_dir: '/usr/local/share/xsessions'
+

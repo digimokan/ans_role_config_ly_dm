@@ -1,3 +1,6 @@
 # Ly config file path
 linux_ly_config_path: '/etc/ly/config.ini'
 
+# directory where WM/DM-installed '.desktop' files are located
+linux_xsessions_dir: '/usr/share/xsessions'
+

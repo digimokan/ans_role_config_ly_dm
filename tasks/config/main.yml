@@ -1,12 +1,16 @@
-- name: "Configure Ly settings for Linux"
-  ansible.builtin.include_tasks: do_config.yml
+- name: "Configure common Ly settings for Linux"
+  ansible.builtin.include_tasks: common_config.yml
   vars:
     ly_config_path: "{{ linux_ly_config_path }}"
   when: ansible_system == "Linux"
 
-- name: "Configure Ly settings for FreeBSD"
-  ansible.builtin.include_tasks: do_config.yml
+- name: "Configure common Ly settings for FreeBSD"
+  ansible.builtin.include_tasks: common_config.yml
   vars:
     ly_config_path: "{{ freebsd_ly_config_path }}"
+  when: ansible_os_family == "FreeBSD"
+
+- name: "Configure OS-specific settings for FreeBSD"
+  ansible.builtin.include_tasks: freebsd/main.yml
   when: ansible_os_family == "FreeBSD"
 
