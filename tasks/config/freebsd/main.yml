@@ -4,7 +4,7 @@
     dest: "{{ linux_xsessions_dir }}"
     force: yes
     owner: root
-    directory_mode: preserve
+    directory_mode: '755'
     mode: preserve
   become: true
   become_user: root
