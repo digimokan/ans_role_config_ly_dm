@@ -16,3 +16,6 @@ linux_ly_xsetup_script: '/etc/ly/xsetup.sh'
 # directory where WM/DM-installed Wayland session files are located
 linux_wayland_sessions_dir: '/usr/share/wayland-sessions'
 
+# Ly Wayland setup script path
+linux_ly_wayland_setup_script: '/etc/ly/wsetup.sh'
+

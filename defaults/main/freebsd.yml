@@ -22,3 +22,6 @@ freebsd_ly_xsetup_script: '/usr/local/etc/ly/xsetup.sh'
 # directory where WM/DM-installed Wayland session files are located
 freebsd_wayland_sessions_dir: '/usr/local/share/wayland-sessions'
 
+# Ly Wayland setup script path
+freebsd_ly_wayland_setup_script: '/usr/local/etc/ly/wsetup.sh'
+
