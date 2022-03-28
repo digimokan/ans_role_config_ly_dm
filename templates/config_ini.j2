@@ -5,6 +5,12 @@
 # Upstream config source:
 #   https://github.com/fairyglade/ly/blob/master/res/config.ini
 
+# save login (user & session) used
+save = {{ 'true' if save_and_load_login else 'false' }}
+
+# load the saved login (user & session) on next Ly start as defaults
+load = {{ 'true' if save_and_load_login else 'false' }}
+
 # login save file path (saves which user and session logged in)
 save_file = {{ login_save_path }}
 

@@ -1,3 +1,6 @@
+# save login (user & session) used, and load them on next Ly start as defaults
+save_and_load_login: true
+
 # virtual console tty to run Ly on
 virtual_console_num: '1'
 
