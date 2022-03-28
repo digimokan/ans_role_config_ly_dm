@@ -1,6 +1,11 @@
 # vim: set filetype=conf:
 # ANSIBLE-MANAGED CONFIGURATION FILE
 # defaults taken from {{ ly_config_path }}.sample
+# Upstream config source:
+#   https://github.com/fairyglade/ly/blob/master/res/config.ini
+
+# path for command to start Xorg server
+x_cmd: {{ xorg_server_cmd }}
 
 # dir path for externally-installed WM/DE '.desktop' files (used in Ly menu)
 xsessions = {{ xsessions_dir }}
