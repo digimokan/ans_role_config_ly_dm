@@ -3,6 +3,7 @@
   vars:
     ly_config_path: "{{ linux_ly_config_path }}"
     xorg_server_cmd: "{{ linux_xorg_server_cmd }}"
+    xorg_xauth_cmd: "{{ linux_xorg_xauth_cmd }}"
     xsessions_dir: "{{ linux_xsessions_dir }}"
   when: ansible_system == "Linux"
 
@@ -11,6 +12,7 @@
   vars:
     ly_config_path: "{{ freebsd_ly_config_path }}"
     xorg_server_cmd: "{{ freebsd_xorg_server_cmd }}"
+    xorg_xauth_cmd: "{{ freebsd_xorg_xauth_cmd }}"
     xsessions_dir: "{{ freebsd_xsessions_dir }}"
   when: ansible_os_family == "FreeBSD"
 
