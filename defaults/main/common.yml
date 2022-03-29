@@ -1,3 +1,6 @@
+# show main box borders
+show_main_box_borders: true
+
 # save login (user & session) used, and load them on next Ly start as defaults
 save_and_load_login: true
 
