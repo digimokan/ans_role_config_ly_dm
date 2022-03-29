@@ -34,15 +34,15 @@ freebsd_ly_wayland_setup_script: '/usr/local/etc/ly/wsetup.sh'
 # command to reset (i.e. clear) the terminal
 freebsd_terminal_reset_cmd: '/usr/bin/tput reset'
 
-# config file for system-wide terminal configuration
-freebsd_terminal_config_path: '/etc/gettytab'
-
-# config file for system-wide console configuration
-freebsd_console_config_path: '/etc/ttys'
-
 # system-shutdown command (called from Ly menu)
 freebsd_system_shutdown_cmd: '/sbin/shutdown -p now'
 
 # system-restart command (called from Ly menu)
 freebsd_system_restart_cmd: '/sbin/shutdown -r now'
+
+# config file for system-wide terminal configuration
+freebsd_terminal_config_path: '/etc/gettytab'
+
+# config file for system-wide console configuration
+freebsd_console_config_path: '/etc/ttys'
 
