@@ -4,6 +4,9 @@ show_main_box_borders: true
 # foreground color ID
 fg_color_id: '9'
 
+# background color ID
+bg_color_id: '0'
+
 # save login (user & session) used, and load them on next Ly start as defaults
 save_and_load_login: true
 
