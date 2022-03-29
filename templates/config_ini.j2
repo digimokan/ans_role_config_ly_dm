@@ -23,6 +23,12 @@ fg = {{ fg_color_id }}
 # background color ID
 bg = {{ bg_color_id }}
 
+# enable background animation
+animate = {{ 'false' if (bg_animation_selection == '') else 'true' }}
+
+# background animation number selection
+animation = {{ '0' if (bg_animation_selection == '') else bg_animation_selection }}
+
 # Ly service name
 service_name = {{ ly_service_name }}
 
