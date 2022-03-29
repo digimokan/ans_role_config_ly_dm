@@ -38,7 +38,7 @@ linux_console_cmd: '/dev/console'
 linux_terminal_reset_cmd: '/usr/bin/tput reset'
 
 # system-shutdown command (called from Ly menu)
-linux_system_shutdown_cmd: '/sbin/shutdown -a now'
+linux_system_shutdown_cmd: '/usr/bin/poweroff'
 
 # system-restart command (called from Ly menu)
 linux_system_restart_cmd: '/sbin/shutdown -r now'
