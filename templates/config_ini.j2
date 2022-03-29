@@ -8,6 +8,9 @@
 # default input field on startup
 default_input = {{ '0' if (default_input_on_startup == 'session') else ('1' if (default_input_on_startup == 'login_name') else '2') }}
 
+# password-mask character
+asterisk = {{ password_mask_char }}
+
 # erase password input on login failure
 blank_password = {{ 'true' if erase_password_on_fail else 'false' }}
 
