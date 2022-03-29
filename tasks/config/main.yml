@@ -14,6 +14,7 @@
     ly_wayland_setup_script: "{{ linux_ly_wayland_setup_script }}"
     terminal_reset_cmd: "{{ linux_terminal_reset_cmd }}"
     system_shutdown_cmd: "{{ linux_system_shutdown_cmd }}"
+    system_restart_cmd: "{{ linux_system_restart_cmd }}"
   when: ansible_system == "Linux"
 
 - name: "Configure common Ly settings for FreeBSD"
@@ -32,6 +33,7 @@
     ly_wayland_setup_script: "{{ freebsd_ly_wayland_setup_script }}"
     terminal_reset_cmd: "{{ freebsd_terminal_reset_cmd }}"
     system_shutdown_cmd: "{{ freebsd_system_shutdown_cmd }}"
+    system_restart_cmd: "{{ freebsd_system_restart_cmd }}"
   when: ansible_os_family == "FreeBSD"
 
 - name: "Configure OS-specific settings for FreeBSD"
