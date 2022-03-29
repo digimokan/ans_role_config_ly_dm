@@ -1,6 +1,9 @@
 # Ly config file path
 freebsd_ly_config_path: '/usr/local/etc/ly/config.ini'
 
+# Ly service name
+freebsd_ly_service_name: 'ly'
+
 # system default PATH environment var
 freebsd_path_env_var: '/sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/bin/env'
 
