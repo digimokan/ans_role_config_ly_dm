@@ -5,6 +5,9 @@
 # Upstream config source:
 #   https://github.com/fairyglade/ly/blob/master/res/config.ini
 
+# default input field on startup
+default_input = {{ '0' if (default_input_on_startup == 'session') else ('1' if (default_input_on_startup == 'login_name') else '2') }}
+
 # show main box borders
 hide_borders = {{ 'false' if show_main_box_borders else 'true' }}
 
