@@ -1,6 +1,9 @@
 # default input field on startup ('session', 'login_name', or 'password')
 default_input_on_startup: 'password'
 
+# erase password input on login failure
+erase_password_on_fail: true
+
 # show main box borders
 show_main_box_borders: true
 
