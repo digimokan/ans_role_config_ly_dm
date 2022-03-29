@@ -41,5 +41,5 @@ linux_terminal_reset_cmd: '/usr/bin/tput reset'
 linux_system_shutdown_cmd: '/usr/bin/poweroff'
 
 # system-restart command (called from Ly menu)
-linux_system_restart_cmd: '/sbin/shutdown -r now'
+linux_system_restart_cmd: '/usr/bin/reboot'
 
