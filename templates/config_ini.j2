@@ -5,7 +5,7 @@
 # Upstream config source:
 #   https://github.com/fairyglade/ly/blob/master/res/config.ini
 
-# default input field on startup
+# default input field on startup (0 = session, 1 = login_name, 2 = password)
 default_input = {{ '0' if (default_input_on_startup == 'session') else ('1' if (default_input_on_startup == 'login_name') else '2') }}
 
 # password-mask character
