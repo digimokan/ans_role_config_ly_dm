@@ -4,6 +4,9 @@ save_and_load_login: true
 # virtual console tty to run Ly on
 virtual_console_num: '1'
 
-# Add Wayland specifier to session names
+# add Wayland specifier to session names
 add_wayland_session_specifier: false
+
+# event timeout, in milliseconds
+event_timeout_ms: '5'
 
