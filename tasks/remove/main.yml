@@ -3,14 +3,14 @@
     name: "{{ service_name }}"
     enabled: no
   failed_when: false
+  loop: "{{ services_to_disable }}"
+  loop_control:
+    loop_var: 'service_name'
   vars:
     services_to_disable:
       - lightdm
   become: true
   become_user: root
-  loop: "{{ services_to_disable }}"
-  loop_control:
-    loop_var: 'service_name'
 
 - name: "Uninstall other DM packages: {{ packages_to_uninstall }}"
   ansible.builtin.package:
