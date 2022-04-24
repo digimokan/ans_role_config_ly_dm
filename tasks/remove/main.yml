@@ -1,0 +1,16 @@
+- name: "Uninstall lightdm packages"
+  ansible.builtin.package:
+    name:
+      - lightdm
+      - lightdm-gtk-greeter
+    state: absent
+  become: true
+  become_user: root
+
+- name: "Disable lightdm service from starting at boot"
+  ansible.builtin.service:
+    name: lightdm
+    enabled: no
+  become: true
+  become_user: root
+

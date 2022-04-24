@@ -31,3 +31,6 @@ add_wayland_session_specifier: false
 # event timeout, in milliseconds
 event_timeout_ms: '5'
 
+# uninstall other (non-Ly) display managers, and disable their services
+remove_other_display_managers: true
+

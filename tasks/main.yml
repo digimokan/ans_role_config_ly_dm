@@ -1,3 +1,7 @@
+- name: "Remove other (non-Ly) display managers"
+  ansible.builtin.include_tasks: remove/main.yml
+  when: remove_other_display_managers
+
 - name: "Install Ly packages"
   ansible.builtin.include_tasks: install/main.yml
 
