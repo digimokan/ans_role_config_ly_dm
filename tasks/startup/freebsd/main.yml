@@ -11,16 +11,28 @@
   become: true
   become_user: root
 
-- name: "Set Ly to start on virtual console {{ virtual_console_num }} in '{{ freebsd_console_config_path }}'"
+- name: "Comment out default virtual console {{ virtual_console_num }} config in '{{ freebsd_console_config_path }}'"
   ansible.builtin.lineinfile:
     path: "{{ freebsd_console_config_path }}"
     regexp: >-
-      ^ttyv{{ virtual_console_num }}
+      ^(# )?ttyv{{ virtual_console_num }}(.*)$
     line: >-
-      ttyv{{ virtual_console_num }} "/usr/libexec/getty Ly" xterm on secure
+      # ttyv{{ virtual_console_num }}\2
     state: present
     create: no
+    backrefs: yes
     backup: yes
+  become: true
+  become_user: root
+
+- name: "Set virtual console {{ virtual_console_num }} config for Ly in '{{ freebsd_console_config_path }}'"
+  ansible.builtin.blockinfile:
+    path: "{{ freebsd_console_config_path }}"
+    block: |
+      ttyv{{ virtual_console_num }} "/usr/libexec/getty Ly" xterm on secure
+    marker: "# {mark} ANSIBLE MANAGED BLOCK: Ly virtual console config"
+    state: present
+    create: no
   become: true
   become_user: root
 
