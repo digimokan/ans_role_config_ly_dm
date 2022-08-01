@@ -19,6 +19,7 @@
     line: >-
       # ttyv{{ virtual_console_num }}\2
     state: present
+    firstmatch: yes
     create: no
     backrefs: yes
     backup: yes
