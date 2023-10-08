@@ -7,7 +7,7 @@
           :al=root:
     marker: "# {mark} ANSIBLE MANAGED BLOCK: Ly display manager terminal config"
     state: present
-    create: no
+    create: false
   become: true
   become_user: root
 
@@ -19,10 +19,10 @@
     line: >-
       # ttyv{{ virtual_console_num }}\2
     state: present
-    firstmatch: yes
-    create: no
-    backrefs: yes
-    backup: yes
+    firstmatch: true
+    create: false
+    backrefs: true
+    backup: true
   become: true
   become_user: root
 
@@ -33,7 +33,7 @@
       ttyv{{ virtual_console_num }} "/usr/libexec/getty Ly" xterm on secure
     marker: "# {mark} ANSIBLE MANAGED BLOCK: Ly virtual console config"
     state: present
-    create: no
+    create: false
   become: true
   become_user: root
 

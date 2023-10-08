@@ -2,7 +2,7 @@
   ansible.builtin.copy:
     src: "{{ freebsd_xsessions_dir }}/"
     dest: "{{ linux_xsessions_dir }}"
-    force: yes
+    force: true
     owner: root
     directory_mode: '755'
     mode: preserve
